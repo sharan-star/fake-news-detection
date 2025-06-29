@@ -1,0 +1,26 @@
+// This is your Prisma schema file
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Newspaper {
+  id          Int      @id @default(autoincrement())
+  name        String   // Name of the newspaper
+  source      String   // e.g., "The Hindu", "Indian Express", etc.
+  title       String   // Article title
+  content     String   // Article content
+  url         String   // URL of the article
+  publishedAt DateTime // Publication date and time
+  category    String?  // News category (optional)
+  author      String?  // Author name (optional)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([source])
+  @@index([publishedAt])
+} 
