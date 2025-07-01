@@ -29,6 +29,6 @@ This project is built with:
 
 **preview**
 ![image](https://github.com/user-attachments/assets/274b311b-42f5-4bff-a2fb-743ceb7ccd0b)
-![image](https://github.com/user-attachments/assets/7b1d5d8d-67ab-49fb-82fa-cf5e7ae320fc)
+
 ![image](https://github.com/user-attachments/assets/9b522e5b-2dea-405f-af63-598527cd182b)
 
